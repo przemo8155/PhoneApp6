@@ -58,7 +58,7 @@
                 <CompositeTransform Rotation="90"/>
             </TextBlock.RenderTransform>
         </TextBlock>
-        <TextBlock x:Name="timerText" HorizontalAlignment="Left" Margin="413.508,132.391,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Foreground="White" FontWeight="Bold" Width="34.5" Grid.Row="1" Height="28" Grid.ColumnSpan="2">
+        <TextBlock x:Name="timerText" HorizontalAlignment="Left" Margin="415,132.391,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Foreground="White" FontWeight="Bold" Width="34.5" Grid.Row="1" Height="28" Grid.ColumnSpan="2">
             <TextBlock.RenderTransform>
                 <CompositeTransform Rotation="90"/>
             </TextBlock.RenderTransform>
@@ -260,12 +260,12 @@
                 <CompositeTransform Rotation="90"/>
             </TextBlock.RenderTransform>
         </TextBlock>
-        <TextBlock x:Name="yourResultText" HorizontalAlignment="Left" Margin="15.101,197.863,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" Width="205.674" d:LayoutRounding="Auto" Height="59.382" Text="Your result:" FontWeight="Bold" FontSize="36">
+        <TextBlock x:Name="yourResultText" HorizontalAlignment="Left" Margin="18.101,168.863,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" Width="205.674" d:LayoutRounding="Auto" Height="59.382" Text="Your result:" FontWeight="Bold" FontSize="36">
             <TextBlock.RenderTransform>
                 <CompositeTransform Rotation="90"/>
             </TextBlock.RenderTransform>
         </TextBlock>
-        <TextBlock x:Name="endGameResultText" HorizontalAlignment="Left" Margin="10.5,199.5,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" UseLayoutRounding="False" Width="110" d:LayoutRounding="Auto" Height="57.602">
+        <TextBlock x:Name="endGameResultText" HorizontalAlignment="Left" Margin="13.5,184.5,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" UseLayoutRounding="False" Width="110" d:LayoutRounding="Auto" Height="57.602">
             <TextBlock.RenderTransform>
                 <CompositeTransform Rotation="90"/>
             </TextBlock.RenderTransform>

@@ -111,7 +111,6 @@ namespace PhoneApp6
 
             const int randFromLevel = 23;
             int maxRand = randFromLevel - obj.selectedLevel;
-            //MessageBox.Show(maxRand.ToString());
             wall1.Source = imageClear;
             wall2.Source = imageClear;
             wall3.Source = imageClear;
@@ -245,7 +244,157 @@ namespace PhoneApp6
             randWallM6 = rand.Next(1, maxRand);
             randWallM7 = rand.Next(1, maxRand);
 
-            if(randWall9 == 2 && randWall10 == 2 && randWall11 == 2 && randWall12 == 2 && randWallM1 == 2)
+            if(randWall9 == 2 && randWall10 == 2 && randWallX1 == 2)
+            {
+                int result = rand.Next(1, 3);
+                switch(result)
+                {
+                    case 1:
+                        randWall9 = 1;
+                        break;
+                    case 2:
+                        randWall10 = 1;
+                        break;
+                    case 3:
+                        randWallX1 = 1;
+                        break;
+                }
+            }
+
+            if(randWallX3 == 2 && randWallX4 == 2 && randWallM2 == 2 && randWall5 == 2 & randWall1 == 2)
+            {
+                int result = rand.Next(1, 5);
+                switch(result)
+                {
+                    case 1:
+                        randWallX3 = 1;
+                        break;
+                    case 2:
+                        randWallX4 = 1;
+                        break;
+                    case 3:
+                        randWallM2 = 1;
+                        break;
+                    case 4:
+                        randWall5 = 1;
+                        break;
+                    case 5:
+                        randWall1 = 1;
+                        break;
+                }
+               
+
+            }
+
+            if(randWall9 == 2 && randWall10 == 2 && randWallM1 == 2 && randWall12 == 2 && randWallX18 == 2 && randWall2 == 2)
+            {
+                int result = rand.Next(1, 6);
+                switch(result)
+                {
+                    case 1:
+                        randWall9 = 1;
+                        break;
+                    case 2:
+                        randWall10 = 1;
+                        break;
+                    case 3:
+                        randWallM1 = 1;
+                        break;
+                    case 4:
+                        randWall12 = 1;
+                        break;
+                    case 5:
+                        randWallX18 = 1;
+                        break;
+                    case 6:
+                        randWall2 = 1;
+                        break;
+                }
+                    
+            }
+
+            if (randWall9 == 2 && randWall10 == 2 && randWallM1 == 2 && randWall7 == 2 && randWallX4 == 2 && randWall2 == 2)
+            {
+                int result = rand.Next(1, 6);
+                switch (result)
+                {
+                    case 1:
+                        randWall9 = 1;
+                        break;
+                    case 2:
+                        randWall10 = 1;
+                        break;
+                    case 3:
+                        randWallM1 = 1;
+                        break;
+                    case 4:
+                        randWall7 = 1;
+                        break;
+                    case 5:
+                        randWallX4 = 1;
+                        break;
+                    case 6:
+                        randWall2 = 1;
+                        break;
+                }
+
+            }
+
+            if (randWall9 == 2 && randWall10 == 2 && randWallM2 == 2 && randWall7 == 2 && randWallX2 == 2 && randWall2 == 2)
+            {
+                int result = rand.Next(1, 6);
+                switch (result)
+                {
+                    case 1:
+                        randWall9 = 1;
+                        break;
+                    case 2:
+                        randWall10 = 1;
+                        break;
+                    case 3:
+                        randWallM2 = 1;
+                        break;
+                    case 4:
+                        randWall7 = 1;
+                        break;
+                    case 5:
+                        randWallX2 = 1;
+                        break;
+                    case 6:
+                        randWall2 = 1;
+                        break;
+                }
+
+            }
+
+            if (randWall9 == 2 && randWall5 == 2 && randWallM2 == 2 && randWall7 == 2 && randWallX17 == 2 && randWall2 == 2)
+            {
+                int result = rand.Next(1, 6);
+                switch (result)
+                {
+                    case 1:
+                        randWall9 = 1;
+                        break;
+                    case 2:
+                        randWall5 = 1;
+                        break;
+                    case 3:
+                        randWallM2 = 1;
+                        break;
+                    case 4:
+                        randWall7 = 1;
+                        break;
+                    case 5:
+                        randWallX17 = 1;
+                        break;
+                    case 6:
+                        randWall2 = 1;
+                        break;
+                }
+
+            }
+
+            if (randWall9 == 2 && randWall10 == 2 && randWall11 == 2 && randWall12 == 2 && randWallM1 == 2)
             {
                 int result = rand.Next(1, 5);
                 switch(result)
@@ -2251,6 +2400,15 @@ namespace PhoneApp6
 
         private void exitLevel_Click(object sender, RoutedEventArgs e)
         {
+
+
+            var obj = App.Current as App;
+            Others ot = new Others();
+            string y = "";
+            ot.ReadFile(y);
+            //ot.WriteFile(obj.selectedLevel.ToString());
+            ot.WriteFile(levelText.ToString());
+
             NavigationService.Navigate(new Uri("/SelectLevel.xaml", UriKind.Relative));
         }
 
@@ -2264,7 +2422,6 @@ namespace PhoneApp6
                 gameOver.Text = "YOU WON!";
                 exitLevel.Visibility = Visibility.Visible;
                 SetResult(true);
-                MessageBox.Show(collisions.ToString());
             }
             if (!visible)
             {
@@ -2303,7 +2460,6 @@ namespace PhoneApp6
 
         public void SetLevel()
         {
-            //levelText.Text = publicLevel.ToString();
             var obj = App.Current as App;
 
             levelText.Text = obj.selectedLevel.ToString();

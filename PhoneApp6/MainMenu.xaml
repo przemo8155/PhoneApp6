@@ -16,7 +16,7 @@
     shell:SystemTray.IsVisible="True">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+    <Grid x:Name="LayoutRoot" Background="Transparent" Margin="-9,0,0,0">
         <Grid.RowDefinitions>
             <RowDefinition Height="19*"/>
             <RowDefinition Height="29*"/>
@@ -26,7 +26,7 @@
             <ColumnDefinition Width="157*"/>
             <ColumnDefinition Width="175*"/>
         </Grid.ColumnDefinitions>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="Auto" VerticalAlignment="Top" Width="Auto" Source="/Images/mainmenubackground.png" Grid.ColumnSpan="3" Stretch="Fill" Grid.RowSpan="2"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="480" VerticalAlignment="Top" Width="Auto" Source="/Images/mainmenubackground.png" Grid.ColumnSpan="3" Stretch="Fill" Grid.RowSpan="2"/>
         <Button x:Name="play" Content="Play" HorizontalAlignment="Left" Margin="44,93,0,0" VerticalAlignment="Top" Click="play_Click" Height="117" Width="200" Background="Blue" Grid.Column="1" Grid.Row="1"/>
         <Button x:Name="exit" Content="Exit" HorizontalAlignment="Left" Margin="92,93,0,0" VerticalAlignment="Top" Click="exit_Click" Height="117" Width="200" Grid.Column="2" Background="Blue" Grid.Row="1"/>
 
@@ -36,12 +36,12 @@
         <toolkit:NavigationInTransition>
             <toolkit:NavigationInTransition.Forward>
                 <toolkit:RollTransition>
-                    
+
                 </toolkit:RollTransition>
             </toolkit:NavigationInTransition.Forward>
             <toolkit:NavigationInTransition.Backward>
                 <toolkit:RollTransition>
-                    
+
                 </toolkit:RollTransition>
             </toolkit:NavigationInTransition.Backward>
         </toolkit:NavigationInTransition>
@@ -50,7 +50,7 @@
         <toolkit:NavigationOutTransition>
             <toolkit:NavigationOutTransition.Backward>
                 <toolkit:RollTransition>
-                    
+
                 </toolkit:RollTransition>
             </toolkit:NavigationOutTransition.Backward>
             <toolkit:NavigationOutTransition.Forward>
