@@ -1482,12 +1482,14 @@ namespace PhoneApp6
 
                         sx = 100;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
 
                     else
                     {
                         sx = 130;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
                 }
 
@@ -1504,12 +1506,14 @@ namespace PhoneApp6
 
                         sx = 195;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
 
                     else
                     {
                         sx = 225;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
                 }
             }
@@ -1524,12 +1528,14 @@ namespace PhoneApp6
 
                         sx = 100;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
 
                     else
                     {
                         sx = 130;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
                 }
 
@@ -1546,12 +1552,14 @@ namespace PhoneApp6
 
                         sx = 195;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
 
                     else
                     {
                         sx = 225;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
                 }
 
@@ -1567,12 +1575,14 @@ namespace PhoneApp6
 
                         sx = 100;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
 
                     else
                     {
                         sx = 130;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
                 }
 
@@ -1588,12 +1598,14 @@ namespace PhoneApp6
 
                         sx = 195;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
 
                     else
                     {
                         sx = 225;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
                 }
 
@@ -1609,12 +1621,14 @@ namespace PhoneApp6
 
                         sx = 100;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
 
                     else
                     {
                         sx = 130;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
                 }
 
@@ -1630,12 +1644,14 @@ namespace PhoneApp6
 
                         sx = 195;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
 
                     else
                     {
                         sx = 225;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
                 }
 
@@ -1651,12 +1667,14 @@ namespace PhoneApp6
 
                         sx = 20;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
 
                     else
                     {
                         sx = 50;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
                 }
 
@@ -1673,12 +1691,14 @@ namespace PhoneApp6
 
                         sx = 280;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
 
                     else
                     {
                         sx = 310;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
                 }
 
@@ -1694,12 +1714,14 @@ namespace PhoneApp6
 
                         sx = 20;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
 
                     else
                     {
                         sx = 50;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
                 }
 
@@ -1715,12 +1737,14 @@ namespace PhoneApp6
 
                         sx = 280;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
 
                     else
                     {
                         sx = 310;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
                 }
 
@@ -1736,12 +1760,14 @@ namespace PhoneApp6
 
                         sx = 20;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
 
                     else
                     {
                         sx = 50;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
                 }
 
@@ -1757,12 +1783,14 @@ namespace PhoneApp6
 
                         sx = 280;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
 
                     else
                     {
                         sx = 310;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
                 }
 
@@ -1778,12 +1806,14 @@ namespace PhoneApp6
 
                         sx = 20;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
 
                     else
                     {
                         sx = 50;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
                 }
 
@@ -1799,12 +1829,14 @@ namespace PhoneApp6
 
                         sx = 280;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
 
                     else
                     {
                         sx = 310;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
                 }
             }
@@ -1819,12 +1851,14 @@ namespace PhoneApp6
 
                         sx = 20;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
 
                     else
                     {
                         sx = 50;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
                 }
 
@@ -1840,12 +1874,14 @@ namespace PhoneApp6
 
                         sx = 280;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
 
                     else
                     {
                         sx = 310;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
                 }
             }
@@ -1861,12 +1897,14 @@ namespace PhoneApp6
 
                         sx = 20;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
 
                     else
                     {
                         sx = 50;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
                 }
 
@@ -1882,12 +1920,14 @@ namespace PhoneApp6
 
                         sx = 280;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
 
                     else
                     {
                         sx = 310;
                         vx = -vx * _damping;
+                        collisions += 1;
                     }
                 }
             }
@@ -1916,11 +1956,13 @@ namespace PhoneApp6
                     {
                         sy = 32;
                         vy = -vy * _damping;
+                        collisions += 1;
                     }
                     else
                     {
                         sy = 62;
                         vy = -vy * _damping;
+                        collisions += 1;
                     }
                 }
             }
@@ -1936,11 +1978,13 @@ namespace PhoneApp6
                     {
                         sy = 120;
                         vy = -vy * _damping;
+                        collisions += 1;
                     }
                     else
                     {
                         sy = 150;
                         vy = -vy * _damping;
+                        collisions += 1;
                     }
                 }
             }
@@ -1955,11 +1999,13 @@ namespace PhoneApp6
                     {
                         sy = 213;
                         vy = -vy * _damping;
+                        collisions += 1;
                     }
                     else
                     {
                         sy = 243;
                         vy = -vy * _damping;
+                        collisions += 1;
                     }
                 }
             }
@@ -1975,11 +2021,13 @@ namespace PhoneApp6
                     {
                         sy = 308;
                         vy = -vy * _damping;
+                        collisions += 1;
                     }
                     else
                     {
                         sy = 338;
                         vy = -vy * _damping;
+                        collisions += 1;
                     }
                 }
             }
@@ -1992,11 +2040,13 @@ namespace PhoneApp6
                     {
                         sy = 403;
                         vy = -vy * _damping;
+                        collisions += 1;
                     }
                     else
                     {
                         sy = 433;
                         vy = -vy * _damping;
+                        collisions += 1;
                     }
                 }
             }
@@ -2011,11 +2061,13 @@ namespace PhoneApp6
                     {
                         sy = 495;
                         vy = -vy * _damping;
+                        collisions += 1;
                     }
                     else
                     {
                         sy = 525;
                         vy = -vy * _damping;
+                        collisions += 1;
                     }
                 }
             }
@@ -2030,11 +2082,13 @@ namespace PhoneApp6
                     {
                         sy = 560;
                         vy = -vy * _damping;
+                        collisions += 1;
                     }
                     else
                     {
                         sy = 590;
                         vy = -vy * _damping;
+                        collisions += 1;
                     }
                 }
             }
