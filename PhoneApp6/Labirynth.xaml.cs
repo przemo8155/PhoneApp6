@@ -85,7 +85,7 @@ namespace PhoneApp6
 
         public void CalculateResult()
         {
-            endGameResult = (timerCounter * 100) - (collisions * 3);
+            endGameResult = (timerCounter * 1000) - (collisions * 3);
         }
 
         public void SetResult(bool visible)
