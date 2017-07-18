@@ -16,10 +16,16 @@ namespace PhoneApp6
     {
         ObservableCollection<Button> list = new ObservableCollection<Button>();
         Button l1 = new Button();
+        Others ot = new Others();
+        public string level = "1";
+        public int levelInt;
 
         public SelectLevel()
         {
             InitializeComponent();
+            ot.ReadFile(level);
+            levelInt = int.Parse(level);
+            MessageBox.Show(levelInt.ToString());            
         }
 
         private void selectLevelButton_Click(object sender, RoutedEventArgs e)

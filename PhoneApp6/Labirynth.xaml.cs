@@ -2266,6 +2266,7 @@ namespace PhoneApp6
             if (x > _width - 40 && y > _height - 40)
             {
                 ClearLevelGameScreen(true);
+                othersClass.SaveFile(levelText.Text);
 
             }
 
@@ -2400,15 +2401,6 @@ namespace PhoneApp6
 
         private void exitLevel_Click(object sender, RoutedEventArgs e)
         {
-
-
-            var obj = App.Current as App;
-            Others ot = new Others();
-            string y = "";
-            ot.ReadFile(y);
-            //ot.WriteFile(obj.selectedLevel.ToString());
-            ot.WriteFile(levelText.ToString());
-
             NavigationService.Navigate(new Uri("/SelectLevel.xaml", UriKind.Relative));
         }
 
