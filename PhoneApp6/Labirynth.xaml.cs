@@ -15,6 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using Microsoft.Phone.BackgroundAudio;
 using System.Diagnostics;
+using Windows.Storage;
 
 namespace PhoneApp6
 {
@@ -2265,8 +2266,19 @@ namespace PhoneApp6
             BallTransform.Y = y;
             if (x > _width - 40 && y > _height - 40)
             {
+
+                var obj = App.Current as App;
+                int unl = obj.unlockedLevel;
+                int lvl = int.Parse(levelText.Text);
+                if(lvl > unl)
+                {
+                    obj.unlockedLevel = int.Parse(levelText.Text);
+                }
+                
+                
+
                 ClearLevelGameScreen(true);
-                othersClass.SaveFile(levelText.Text);
+                
 
             }
 

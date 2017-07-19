@@ -25,6 +25,12 @@ namespace PhoneApp6
             get;
             set;
         }
+
+        public int unlockedLevel
+        {
+            get;
+            set;
+        }
         /// <summary>
         /// Constructor for the Application object.
         /// </summary>

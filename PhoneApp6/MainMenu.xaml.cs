@@ -9,6 +9,8 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using Microsoft.Phone.BackgroundAudio;
+using System.IO.IsolatedStorage;
+using Windows.Storage;
 
 namespace PhoneApp6
 {
@@ -20,7 +22,10 @@ namespace PhoneApp6
         public MainMenu()
         {
             InitializeComponent();
-            
+
+
+        
+
         }
 
         public void PlayBackgroundMusic()

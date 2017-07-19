@@ -9,6 +9,7 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using System.Collections.ObjectModel;
 using Windows.UI.Popups;
+using Windows.Storage;
 
 namespace PhoneApp6
 {
@@ -17,15 +18,31 @@ namespace PhoneApp6
         ObservableCollection<Button> list = new ObservableCollection<Button>();
         Button l1 = new Button();
         Others ot = new Others();
-        public string level = "1";
+        public string level = "2";
         public int levelInt;
 
         public SelectLevel()
         {
             InitializeComponent();
-            ot.ReadFile(level);
-            levelInt = int.Parse(level);
-            MessageBox.Show(levelInt.ToString());            
+            ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
+            var obj = App.Current as App;
+
+            Object value = localSettings.Values["level"];
+            if (value == null)
+            {
+
+                obj.unlockedLevel = 1;
+                localSettings.Values["level"] = 1;
+                
+            }
+
+            else
+            {
+                localSettings.Values["level"] = obj.unlockedLevel;
+                
+            }
+
+
         }
 
         private void selectLevelButton_Click(object sender, RoutedEventArgs e)

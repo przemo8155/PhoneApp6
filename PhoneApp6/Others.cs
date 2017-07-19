@@ -18,10 +18,43 @@ namespace PhoneApp6
             PhoneApplicationService.Current.ApplicationIdleDetectionMode = IdleDetectionMode.Disabled;
         }
 
+        public async void SaveFile(string text)
+        {
+            StorageFolder folder = Windows.Storage.ApplicationData.Current.LocalFolder;
+            StorageFile sampleFile = await folder.CreateFileAsync("data.txt", CreationCollisionOption.ReplaceExisting);
+            await Windows.Storage.FileIO.WriteTextAsync(sampleFile, text);
+        }
+
+
+        /*
+
         public void SaveFile(string o)
         {
             var settings = IsolatedStorageSettings.ApplicationSettings;
-            settings.Add("level", o);
+            if(!settings.Contains("level"))
+            {
+                settings.Add("level", o);
+                settings.Save();
+            }
+            else
+            {
+
+            }
+                       
+            //else
+            //{
+            //    string i = settings["level"].ToString();
+            //    int iInt = int.Parse(i);
+
+            //    int oInt = int.Parse(o);
+
+            //    if(iInt < oInt)
+            //    {
+            //        settings.Add("level", o);
+                    
+            //    }
+            //}
+            
         }
 
         public void ReadFile(string o)
@@ -33,32 +66,24 @@ namespace PhoneApp6
             }
         }
 
+        public string ReadFileString(string o)
+        {
+            var settings = IsolatedStorageSettings.ApplicationSettings;
+            if (settings.Contains("level"))
+            {
+                o = settings["level"].ToString();
+                return o;
+            }
+            else
+            {
+                return null;
+            }
+        }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /*
+        
       public async void WriteFile(string con)
       {
           StorageFile sampleFile = await localFolder.CreateFileAsync("dataFile.txt", CreationCollisionOption.ReplaceExisting);
