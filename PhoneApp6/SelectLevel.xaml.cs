@@ -79,6 +79,254 @@ namespace PhoneApp6
                 l3.IsEnabled = true;
                 l4.IsEnabled = true;
             }
+
+            if (obj.unlockedLevel == 4)
+            {
+                l2.IsEnabled = true;
+                l3.IsEnabled = true;
+                l4.IsEnabled = true;
+                l5.IsEnabled = true;
+            }
+
+            if (obj.unlockedLevel == 5)
+            {
+                l2.IsEnabled = true;
+                l3.IsEnabled = true;
+                l4.IsEnabled = true;
+                l5.IsEnabled = true;
+                l6.IsEnabled = true;
+            }
+
+            if (obj.unlockedLevel == 6)
+            {
+                l2.IsEnabled = true;
+                l3.IsEnabled = true;
+                l4.IsEnabled = true;
+                l5.IsEnabled = true;
+                l6.IsEnabled = true;
+                l7.IsEnabled = true;
+            }
+
+            if (obj.unlockedLevel == 7)
+            {
+                l2.IsEnabled = true;
+                l3.IsEnabled = true;
+                l4.IsEnabled = true;
+                l5.IsEnabled = true;
+                l6.IsEnabled = true;
+                l7.IsEnabled = true;
+                l8.IsEnabled = true;
+            }
+
+            if (obj.unlockedLevel == 8)
+            {
+                l2.IsEnabled = true;
+                l3.IsEnabled = true;
+                l4.IsEnabled = true;
+                l5.IsEnabled = true;
+                l6.IsEnabled = true;
+                l7.IsEnabled = true;
+                l8.IsEnabled = true;
+                l9.IsEnabled = true;
+            }
+
+            if (obj.unlockedLevel == 9)
+            {
+                l2.IsEnabled = true;
+                l3.IsEnabled = true;
+                l4.IsEnabled = true;
+                l5.IsEnabled = true;
+                l6.IsEnabled = true;
+                l7.IsEnabled = true;
+                l8.IsEnabled = true;
+                l9.IsEnabled = true;
+                l10.IsEnabled = true;
+            }
+
+            if (obj.unlockedLevel == 10)
+            {
+                l2.IsEnabled = true;
+                l3.IsEnabled = true;
+                l4.IsEnabled = true;
+                l5.IsEnabled = true;
+                l6.IsEnabled = true;
+                l7.IsEnabled = true;
+                l8.IsEnabled = true;
+                l9.IsEnabled = true;
+                l10.IsEnabled = true;
+                l11.IsEnabled = true;
+            }
+
+            if (obj.unlockedLevel == 11)
+            {
+                l2.IsEnabled = true;
+                l3.IsEnabled = true;
+                l4.IsEnabled = true;
+                l5.IsEnabled = true;
+                l6.IsEnabled = true;
+                l7.IsEnabled = true;
+                l8.IsEnabled = true;
+                l9.IsEnabled = true;
+                l10.IsEnabled = true;
+                l11.IsEnabled = true;
+                l12.IsEnabled = true;
+            }
+
+            if (obj.unlockedLevel == 12)
+            {
+                l2.IsEnabled = true;
+                l3.IsEnabled = true;
+                l4.IsEnabled = true;
+                l5.IsEnabled = true;
+                l6.IsEnabled = true;
+                l7.IsEnabled = true;
+                l8.IsEnabled = true;
+                l9.IsEnabled = true;
+                l10.IsEnabled = true;
+                l11.IsEnabled = true;
+                l12.IsEnabled = true;
+                l13.IsEnabled = true;
+            }
+
+            if (obj.unlockedLevel == 13)
+            {
+                l2.IsEnabled = true;
+                l3.IsEnabled = true;
+                l4.IsEnabled = true;
+                l5.IsEnabled = true;
+                l6.IsEnabled = true;
+                l7.IsEnabled = true;
+                l8.IsEnabled = true;
+                l9.IsEnabled = true;
+                l10.IsEnabled = true;
+                l11.IsEnabled = true;
+                l12.IsEnabled = true;
+                l13.IsEnabled = true;
+                l14.IsEnabled = true;
+            }
+
+            if (obj.unlockedLevel == 14)
+            {
+                l2.IsEnabled = true;
+                l3.IsEnabled = true;
+                l4.IsEnabled = true;
+                l5.IsEnabled = true;
+                l6.IsEnabled = true;
+                l7.IsEnabled = true;
+                l8.IsEnabled = true;
+                l9.IsEnabled = true;
+                l10.IsEnabled = true;
+                l11.IsEnabled = true;
+                l12.IsEnabled = true;
+                l13.IsEnabled = true;
+                l14.IsEnabled = true;
+                l15.IsEnabled = true;
+            }
+
+            if (obj.unlockedLevel == 15)
+            {
+                l2.IsEnabled = true;
+                l3.IsEnabled = true;
+                l4.IsEnabled = true;
+                l5.IsEnabled = true;
+                l6.IsEnabled = true;
+                l7.IsEnabled = true;
+                l8.IsEnabled = true;
+                l9.IsEnabled = true;
+                l10.IsEnabled = true;
+                l11.IsEnabled = true;
+                l12.IsEnabled = true;
+                l13.IsEnabled = true;
+                l14.IsEnabled = true;
+                l15.IsEnabled = true;
+                l16.IsEnabled = true;
+            }
+
+            if (obj.unlockedLevel == 16)
+            {
+                l2.IsEnabled = true;
+                l3.IsEnabled = true;
+                l4.IsEnabled = true;
+                l5.IsEnabled = true;
+                l6.IsEnabled = true;
+                l7.IsEnabled = true;
+                l8.IsEnabled = true;
+                l9.IsEnabled = true;
+                l10.IsEnabled = true;
+                l11.IsEnabled = true;
+                l12.IsEnabled = true;
+                l13.IsEnabled = true;
+                l14.IsEnabled = true;
+                l15.IsEnabled = true;
+                l16.IsEnabled = true;
+                l17.IsEnabled = true;
+            }
+
+            if (obj.unlockedLevel == 17)
+            {
+                l2.IsEnabled = true;
+                l3.IsEnabled = true;
+                l4.IsEnabled = true;
+                l5.IsEnabled = true;
+                l6.IsEnabled = true;
+                l7.IsEnabled = true;
+                l8.IsEnabled = true;
+                l9.IsEnabled = true;
+                l10.IsEnabled = true;
+                l11.IsEnabled = true;
+                l12.IsEnabled = true;
+                l13.IsEnabled = true;
+                l14.IsEnabled = true;
+                l15.IsEnabled = true;
+                l16.IsEnabled = true;
+                l17.IsEnabled = true;
+                l18.IsEnabled = true;
+            }
+
+            if (obj.unlockedLevel == 18)
+            {
+                l2.IsEnabled = true;
+                l3.IsEnabled = true;
+                l4.IsEnabled = true;
+                l5.IsEnabled = true;
+                l6.IsEnabled = true;
+                l7.IsEnabled = true;
+                l8.IsEnabled = true;
+                l9.IsEnabled = true;
+                l10.IsEnabled = true;
+                l11.IsEnabled = true;
+                l12.IsEnabled = true;
+                l13.IsEnabled = true;
+                l14.IsEnabled = true;
+                l15.IsEnabled = true;
+                l16.IsEnabled = true;
+                l17.IsEnabled = true;
+                l18.IsEnabled = true;
+                l19.IsEnabled = true;
+            }
+
+            if (obj.unlockedLevel > 18)
+            {
+                l2.IsEnabled = true;
+                l3.IsEnabled = true;
+                l4.IsEnabled = true;
+                l5.IsEnabled = true;
+                l6.IsEnabled = true;
+                l7.IsEnabled = true;
+                l8.IsEnabled = true;
+                l9.IsEnabled = true;
+                l10.IsEnabled = true;
+                l11.IsEnabled = true;
+                l12.IsEnabled = true;
+                l13.IsEnabled = true;
+                l14.IsEnabled = true;
+                l15.IsEnabled = true;
+                l16.IsEnabled = true;
+                l17.IsEnabled = true;
+                l18.IsEnabled = true;
+                l19.IsEnabled = true;
+                l20.IsEnabled = true;
+            }
         }
 
         private void selectLevelButton_Click(object sender, RoutedEventArgs e)
