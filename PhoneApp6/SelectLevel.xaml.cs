@@ -16,6 +16,7 @@ namespace PhoneApp6
     public partial class SelectLevel : PhoneApplicationPage
     {
         ObservableCollection<Button> list = new ObservableCollection<Button>();
+        ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
         Button l1 = new Button();
         Others ot = new Others();
         public string level = "2";
@@ -24,7 +25,18 @@ namespace PhoneApp6
         public SelectLevel()
         {
             InitializeComponent();
-            ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
+            Components();
+            EnableControls();
+            
+            
+
+
+
+        }
+
+        private void Components()
+        {
+            
             var obj = App.Current as App;
 
             Object value = localSettings.Values["level"];
@@ -33,16 +45,40 @@ namespace PhoneApp6
 
                 obj.unlockedLevel = 1;
                 localSettings.Values["level"] = 1;
-                
+
             }
 
             else
             {
                 localSettings.Values["level"] = obj.unlockedLevel;
-                
+
             }
 
 
+
+        }
+
+        private void EnableControls()
+        {
+
+            var obj = App.Current as App;
+            if(obj.unlockedLevel > 0 && obj.unlockedLevel < 2)
+            {
+                l2.IsEnabled = true;
+            }
+
+            if(obj.unlockedLevel == 2)
+            {
+                l2.IsEnabled = true;
+                l3.IsEnabled = true;
+            }
+
+            if (obj.unlockedLevel == 3)
+            {
+                l2.IsEnabled = true;
+                l3.IsEnabled = true;
+                l4.IsEnabled = true;
+            }
         }
 
         private void selectLevelButton_Click(object sender, RoutedEventArgs e)
@@ -62,6 +98,23 @@ namespace PhoneApp6
 
         private void backButton_Click(object sender, RoutedEventArgs e)
         {
+            ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
+            var obj = App.Current as App;
+
+            Object value = localSettings.Values["level"];
+            if (value == null)
+            {
+
+                obj.unlockedLevel = 1;
+                localSettings.Values["level"] = 1;
+
+            }
+
+            else
+            {
+                localSettings.Values["level"] = obj.unlockedLevel;
+
+            }
             NavigationService.Navigate(new Uri("/MainMenu.xaml", UriKind.Relative));
         }
     }
