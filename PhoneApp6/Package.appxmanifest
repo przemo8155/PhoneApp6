@@ -1,51 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-
-  <Identity Name="91a7ce87-777e-4bc7-948b-57b1e9d63a1c"
-            Publisher="CN=Przemek"
-            Version="1.0.0.0" />
-
-  <mp:PhoneIdentity PhoneProductId="a404a72a-ad9a-4b11-a7d4-c7edd454d427" PhonePublisherId="e032cca4-61d8-4145-a1cb-fcf2aefe8915"/>
-
+  <Identity Name="91a7ce87-777e-4bc7-948b-57b1e9d63a1c" Publisher="CN=Przemek" Version="1.0.0.0" />
+  <mp:PhoneIdentity PhoneProductId="a404a72a-ad9a-4b11-a7d4-c7edd454d427" PhonePublisherId="e032cca4-61d8-4145-a1cb-fcf2aefe8915" />
   <Properties>
     <DisplayName>PhoneApp6</DisplayName>
     <PublisherDisplayName>Przemek</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
-
   <Prerequisites>
     <OSMinVersion>6.3.1</OSMinVersion>
     <OSMaxVersionTested>6.3.1</OSMaxVersionTested>
   </Prerequisites>
-
   <Resources>
-    <Resource Language="x-generate"/>
+    <Resource Language="x-generate" />
   </Resources>
-
   <Applications>
-    <Application Id="xa404a72ayad9ay4b11ya7d4yc7edd454d427x"
-        Executable="AGHost.exe"
-        EntryPoint="LoadScreen.xaml">
-      <m3:VisualElements
-          DisplayName="PhoneApp6"
-          Square150x150Logo="Assets\SquareTile150x150.png"
-          Square44x44Logo="Assets\Logo.png"
-          Description="PhoneApp6"
-          ForegroundText="light"
-          BackgroundColor="#464646">
-        <m3:DefaultTile Square71x71Logo="Assets\SquareTile71x71.png"/>
+    <Application Id="xa404a72ayad9ay4b11ya7d4yc7edd454d427x" Executable="AGHost.exe" EntryPoint="LoadScreen.xaml">
+      <m3:VisualElements DisplayName="PhoneApp6" Square150x150Logo="Assets\SquareTile150x150.png" Square44x44Logo="Assets\Logo.png" Description="PhoneApp6" ForegroundText="light" BackgroundColor="#464646" ToastCapable="true">
+        <m3:DefaultTile Square71x71Logo="Assets\SquareTile71x71.png">
+        </m3:DefaultTile>
         <m3:SplashScreen Image="Assets\Splashscreen.png" />
       </m3:VisualElements>
       <Extensions>
         <Extension Category="windows.backgroundTasks" EntryPoint="AgHost.BackgroundTask">
           <BackgroundTasks>
-          <Task Type="systemEvent" />
+            <Task Type="systemEvent" />
           </BackgroundTasks>
         </Extension>
       </Extensions>
     </Application>
   </Applications>
   <Capabilities>
+    <Capability Name="removableStorage" />
   </Capabilities>
   <Extensions>
     <Extension Category="windows.activatableClass.inProcessServer">
